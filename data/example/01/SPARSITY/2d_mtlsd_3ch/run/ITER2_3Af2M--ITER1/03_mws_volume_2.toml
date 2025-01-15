@@ -1,0 +1,14 @@
+affs_dataset = "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1/3d_affs"
+fragments_dataset = "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1/fragments_mws"
+seg_dataset_prefix = "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1/segmentations_mws"
+lut_dir = "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1/luts_mws"
+blockwise = false
+
+[mws_params]
+aff_neighborhood = [[1,0,0,],[0,1,0,],[0,0,1,],[2,0,0,],[0,8,0,],[0,0,8,],]
+bias = [-0.4,-0.4,-0.4,-0.75,-0.75,-0.75,]
+sigma = [0,1,1,]
+noise_eps = 0.001
+randomized_strides = true
+filter_fragments = 0.05
+remove_debris = 500

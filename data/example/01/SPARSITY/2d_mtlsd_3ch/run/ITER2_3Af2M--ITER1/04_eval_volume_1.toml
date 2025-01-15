@@ -1,0 +1,13 @@
+out_result_dir = "BASE/code/DATASET_REP/SPARSITY/volume_1.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1"
+seg_datasets_prefix = "BASE/code/DATASET_REP/SPARSITY/volume_1.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1/segmentations"
+
+[self]
+pred_dataset = "BASE/code/DATASET_REP/SPARSITY/volume_1.zarr/3Af2M/ITER2--from--2d_mtlsd_3ch_ITER1/3d_affs"
+thresholds = [ 0.1, 1.0,]
+
+[gt]
+labels_dataset = "BASE/data/DATASET/volume_1.zarr/labels_dense"
+skeletons_file = "BASE/data/DATASET/skels_volume_1.graphml"
+
+[self.params]
+aff_neighborhood = [ [ 1, 0, 0,], [ 0, 1, 0,], [ 0, 0, 1,], [ 2, 0, 0,], [ 0, 8, 0,], [ 0, 0, 8,],]

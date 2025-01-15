@@ -1,0 +1,9 @@
+setup_dir = "BASE/code/DATASET_REP/SPARSITY/2d_mtlsd_3ch"
+voxel_size = [1, 1, 1]
+max_iterations = 20001
+save_checkpoints_every = 5000
+save_snapshots_every = 1000
+[[samples]]
+raw = "BASE/data/DATASET/volume_1.zarr/raw"
+labels = "BASE/data/DATASET/volume_1.zarr/labels_SPARSITY"
+

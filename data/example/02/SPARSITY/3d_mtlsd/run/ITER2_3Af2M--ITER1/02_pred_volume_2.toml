@@ -1,0 +1,8 @@
+[01-3d_mtlsd]
+setup_dir = "BASE/code/DATASET_REP/SPARSITY/3d_mtlsd"
+input_datasets = [ "BASE/data/DATASET/volume_1.zarr/raw",]
+checkpoint = "BASE/code/DATASET_REP/SPARSITY/3d_mtlsd/model_checkpoint_ITER1"
+output_datasets_prefix = "BASE/code/DATASET_REP/SPARSITY/volume_1.zarr/3d_mtlsd"
+chain_str = ""
+num_workers = 4
+num_gpus = 4

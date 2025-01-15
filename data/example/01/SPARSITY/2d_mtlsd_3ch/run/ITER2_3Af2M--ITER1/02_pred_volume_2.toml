@@ -1,0 +1,17 @@
+[01-2d_mtlsd_3ch]
+setup_dir = "BASE/code/DATASET_REP/SPARSITY/2d_mtlsd_3ch"
+input_datasets = [ "BASE/data/DATASET/volume_2.zarr/raw",]
+checkpoint = "BASE/code/DATASET_REP/SPARSITY/2d_mtlsd_3ch/model_checkpoint_ITER1"
+output_datasets_prefix = "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/2d_mtlsd_3ch"
+chain_str = ""
+num_workers = 4
+num_gpus = 4
+
+[02-3Af2M]
+setup_dir = "BS_PATH/models/3d_affs_from_2d_mtlsd"
+input_datasets = [ "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/2d_mtlsd_3ch/ITER1/2d_lsds", "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/2d_mtlsd_3ch/ITER1/2d_affs",]
+checkpoint = "BS_PATH/models/3d_affs_from_2d_mtlsd/model_checkpoint_ITER2"
+output_datasets_prefix = "BASE/code/DATASET_REP/SPARSITY/volume_2.zarr/3Af2M"
+chain_str = "2d_mtlsd_3ch_ITER1"
+num_workers = 4
+num_gpus = 4
